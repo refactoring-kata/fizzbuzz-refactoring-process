@@ -1,12 +1,9 @@
-package org.katas.refactoring.fizzbuzz;
+package org.katas.refactoring.fizzbuzz.speculative.generality;
 
 import org.hamcrest.core.Is;
 import org.junit.Test;
 
-import java.util.ArrayList;
-
 import static org.junit.Assert.assertThat;
-import static org.junit.matchers.JUnitMatchers.containsString;
 
 public class FizzBuzzTest {
     @Test
@@ -14,6 +11,7 @@ public class FizzBuzzTest {
         int input = 1;
         String expect = "1";
         String actual = new FizzBuzz().sayIt(input);
+
 
         assertThat(actual, Is.is(expect));
     }
